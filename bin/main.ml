@@ -20,8 +20,8 @@ let end_game board =
     in alternating order until board is filled. *)
 let rec play_game board (is_black : bool) =
   Board.print_board board;
-  (* check whether game is over
-  if Board.is_board_filled board then end_game board else  *)
+  (* check whether game is over *)
+  if Board.is_board_filled board then end_game board else 
   let player, piece = if is_black then "Black", Board.Black else "White", Board.White in (*TODO: this is dumb*)
   print_string ("[Player: " ^ player ^ "]\nEnter move as 'row col' (i.e. 3 2)\nType 'q' to quit\n> ");
   let response = String.trim (read_line ()) in 

@@ -1,8 +1,8 @@
-open Piece
+(*open Piece*)
 (** creates the board of Othello, and provide a function that prints it out in
     terminal. *)
 
-open Position
+(*open Position*)
 
 type piece =
   | Black

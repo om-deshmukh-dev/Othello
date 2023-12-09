@@ -1,3 +1,25 @@
+(* Testing Plan: This testing plan combines automatic tests with ounit2
+     and manual tests with utop and the terminal to ensure good coverage with all
+     functions.
+  
+     For automatic tests, each function in Board.mli is tested, as those are
+     the main functions that the user interface calls to run the game properly. The
+     tests aim for full coverage with glass box testing. By looking at each
+     line of the implementation, corresponding test cases were written.
+     The tests also cover all the edge cases, mainly the top left and bottom
+     right corners of the board. In testing all possible cases, this ensures that all
+     functions in Board.mli function exactly as expected.
+  
+     For manual tests, the computer players and the basic game
+     functionality were tested in terminal and utop. Black box testing was used,
+     observing the behaviors of the computer players under all possible
+     inputs. This ensures that a typical person would be able to play the game
+     without bugs. Over 100 games were played to fully test the functionality in
+     bin/main and ui.mli.
+  
+     In total, a combination of glass-box and black-box testing ensures
+     that the game functions as intended under all possible scenarios. *)
+
 open OUnit2
 open Othello
 open Board

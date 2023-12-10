@@ -13,3 +13,9 @@ _build
 *~
 \#*\#
 .DS_Store
+
+MIGRATION_INSTRUCTIONS.md
+blob-callback.py
+cleanup_script.sh
+replacements.txt
+more-replacements.txt

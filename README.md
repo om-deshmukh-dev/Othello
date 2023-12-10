@@ -1,8 +1,6 @@
 
 
-A terminal-based version of the board game Othello, built with OCaml.
-
-## Authors
+A terminal-based implementation of the classic board game Othello, built with OCaml.
 
 ## Setup
 

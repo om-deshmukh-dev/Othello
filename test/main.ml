@@ -1,24 +1,24 @@
-(* Testing Plan: For our testing plan, we combined automatic tests with ounit2
+(* Testing Plan: This testing plan combines automatic tests with ounit2
    and manual tests with utop and the terminal to ensure good coverage with all
-   of our functions.
+   functions.
 
-   For our automatic tests, we tested each function in Board.mli, as those were
-   the main functions that our user interface calls to run the game properly. We
-   attempted to get full coverage with glass box testing. By looking at each
-   line of the implementation, we were able to write corresponding test cases.
-   We also attempted to test all the edge cases, mainly the top left and bottom
-   right corners of the board. In testing all possible cases, we ensure that all
-   functions in Board.mli is functioning exactly as expected.
+   For automatic tests, each function in Board.mli is tested, as those are
+   the main functions that the user interface calls to run the game properly. The
+   tests aim for full coverage with glass box testing. By looking at each
+   line of the implementation, corresponding test cases were written.
+   The tests also cover edge cases, mainly the top left and bottom
+   right corners of the board. By testing all possible cases, this ensures that all
+   functions in Board.mli function exactly as expected.
 
-   For our manual tests, we tested our computer players and the basic game
-   functionality in terminal and utop. We used black box testing, as we were
-   just observing the behaviors of the computer players under all possible
+   For manual tests, the computer players and basic game
+   functionality were tested in terminal and utop. Black box testing was used,
+   observing the behaviors of the computer players under all possible
    inputs. This ensures that a typical person would be able to play the game
-   without bugs. We played over 100 games to fully test our functionality in
+   without bugs. Over 100 games were played to fully test the functionality in
    bin/main and ui.mli.
 
-   In total, we used a combination of glass-box and black-box testing to ensure
-   that our game functions as intended under all possible scenarios. *)
+   In total, a combination of glass-box and black-box testing ensures
+   that the game functions as intended under all possible scenarios. *)
 
 open OUnit2
 open Othello

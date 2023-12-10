@@ -85,14 +85,14 @@ let generate_move_hard (valid_moves : (int * int) list) (board : Board.board)
 let evaluate_move_extreme (x, y) color board =
   let weight_matrix =
     [|
-      [| 5; -2; 3; 2; 2; 3; -2; 5 |];
-      [| -2; -4; -1; -1; -1; -1; -4; -2 |];
+      [| 15; -3; 3; 2; 2; 3; -3; 15 |];
+      [| -3; -4; -1; -1; -1; -1; -4; -3 |];
       [| 3; -1; 1; 0; 0; 1; -1; 3 |];
       [| 2; -1; 0; 1; 1; 0; -1; 2 |];
       [| 2; -1; 0; 1; 1; 0; -1; 2 |];
       [| 3; -1; 1; 0; 0; 1; -1; 3 |];
-      [| -2; -4; -1; -1; -1; -1; -4; -2 |];
-      [| 5; -2; 3; 2; 2; 3; -2; 5 |];
+      [| -3; -4; -1; -1; -1; -1; -4; -3 |];
+      [| 15; -3; 3; 2; 2; 3; -3; 15 |];
     |]
   in
   let move_weight = if x >= 0 && y >= 0 then weight_matrix.(x).(y) else 0 in
@@ -106,7 +106,9 @@ let evaluate_move_extreme (x, y) color board =
     || (x = 7 && y = 0)
   in
   let additional_edge_bonus =
-    if is_edge_or_corner (x, y) && flipped_count > 0 then 2 else 0
+    if is_edge_or_corner (x, y) && flipped_count > 0 then
+      if flipped_count > 2 then 3 else 2
+    else 0
   in
   (move_weight + additional_edge_bonus, flipped_count)
 

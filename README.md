@@ -1,13 +1,6 @@
-# cs3110-final-project
+# Othello Terminal Game
 
-A terminal-based version of the board game Othello, created for our CS 3110 final project.
-
-Authors:
-
-- Rahma Abdullah (ra567)
-- Om Deshmukh (od66)
-- Arthi Vijayakumar (av439)
-- Mary Yuan (cy452)
+A terminal-based implementation of the classic board game Othello, built with OCaml.
 
 ## Setup
 
@@ -35,14 +28,10 @@ Refer to this page for the rules of Othello: https://www.worldothello.org/about/
     with white in the center. The range of values for row is 1 <= row <= 8 and column
     is A <= column <= H.
 
-    <img width="384" alt="image" src="https://media.github.coecis.cornell.edu/user/14426/files/4fcc40b2-54c6-4ad4-9d46-7987f5193444">
-
 5.  If you are playing in mutiplayer mode, you can enter moves for each color one
     after the other.
     If you are playing in singleplayer, after you enter the first move, the computer
     will play its own move and you can enter your next move.
-
-    <img width="459" alt="image" src="https://media.github.coecis.cornell.edu/user/14426/files/e36f9ce3-f3b6-491a-ad19-0e2ac99f4f58">
 
 6.  Type 'history' at any point in a current game to enter history mode, where
     you can choose a previous point in the game to return to.

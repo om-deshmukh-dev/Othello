@@ -25,6 +25,7 @@ Refer to INSTALL.txt for installation instructions
     black tiles are the circles with black in the center. The white tiles are circles
     with white in the center. The range of values for row is 1 <= row <= 8 and column
     is A <= column <= H.
+    
 
 5.  If you are playing in mutiplayer mode, you can enter moves for each color one
     after the other.
@@ -32,6 +33,7 @@ Refer to INSTALL.txt for installation instructions
     will play its own move and you can enter your next move. Type 'history' at any
     point in the gameplay to enter history mode, where you can choose a previous
     point in the game to return to.
+    
 
 6.  Type 'q' at any point to quit the game. Type 'h' at any point to list all
     available commands.
